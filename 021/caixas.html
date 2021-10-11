@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title> Modelo de caixas</title>
+    <style>
+        /*
+            BOX-LEVEL: <div>, <h1>-<h6>, <p>, <main>, <header>, <nav>, <article>, <aside>, <footer>, <form>, <video>.
+            
+            inline-level: <span>, <a>, <code>, <small>, <strong>, <em>, <sup>-<sub>, <label>, <button>,
+            <input>, <slect>.
+        */
+
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid darkslategray;
+
+            padding: 10px 10px 10px 10px;
+
+            margin: 20px auto 40px auto;
+
+            outline: 5px dashed salmon;
+        }
+
+        a{
+            border: 10px solid red;
+
+            padding: 10px 10px 10px 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+
+        <p>Paragrafos também são exemplos de box-level, mas os <a href="#">são exemplos de caixas inline-level</a>vamos ver como tudo isso funciona</p>
+
+</body>
+</html>
