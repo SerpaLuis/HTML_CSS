@@ -35,6 +35,11 @@ a.externo::after{
     content: '\00a0\1f517';
 }
 
+.nav{
+    position: fixed;
+    z-index: 100;
+}
+
 header{
     background-image: linear-gradient(to bottom,var(--cor3), var(--cor5));
     min-height: 150px;
@@ -42,10 +47,12 @@ header{
     padding-top: 40px;
 }
 
+
 header h1{
     color: white;
     font-family: var(--font-destaque);
     margin-bottom: 20px;
+    padding-top: 20px;
     font-size: 3em;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.705);
     font-weight: normal;

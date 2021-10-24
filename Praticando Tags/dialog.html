@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <button onclick="controlDialog()" id="btn_dialog">Abrir</button>
+        <dialog class="d1">
+            <div>
+                <h3>Caixa de Dialogo</h3>
+            </div>
+            <div class="dialog-corpo">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="dialog-rodape">
+                <button class="btn-fechar" onclick="fecharDialog()">Fechar</button>
+            </div>
+        </dialog>
+    </header>
+   
+        <p><a href="index.html">Pagina Inicial</a></p>
+   
+    <script>
+        function controlDialog(){
+            document.querySelector('dialog.d1').setAttribute('open',"")
+        }
+        function fecharDialog(){
+            document.querySelector('dialog.d1').removeAttribute('open',"")
+        }
+    </script>
+    
+</body>
+</html>

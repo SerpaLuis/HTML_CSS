@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;    
+        }
+        input{
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .inputline{
+            display: inline;
+        }
+
+        .labelblock{
+            display: block;
+        }
+        form{
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: rgba(128, 128, 128, 0.568);
+            margin: 3px;
+        }
+
+        .dv-btns{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" name="f_cad" method="get">
+        <label for="">Nome:</label>        
+        <input type="text" name="f-nome">
+        
+        <div class="dv-btns">
+            <input type="submit" name="f-btn-enviar" value="Gravar">
+            <input type="reset" name="f-btn-limpar" value="Limpar">
+            <input type="button" name="f-btn" value="Nada">
+        </div>
+    </form>
+
+    <form action="#" name="f-privado" method="get">
+        <label for="">Username:</label>        
+        <input type="text" name="f-nome" maxlength="30" size="30px">
+
+        <label for="">Senha:</label> 
+        <input type="password" name="f-senha"  maxlength="16" size="15px" pattern="[a-zA-Z0-9]{5}"> 
+
+        <label for="" class="labelblock">E-Sportes Faviritos:</label> 
+        <input type="checkbox" name="f-CS" class="inputline" value="Counter Strike"> Counter Strike  
+        <input type="checkbox" name="f-vava" class="inputline" value="Valorant"> Valorant  
+        <input type="checkbox" name="f-r6" class="inputline" value="Rainbow Six Siege"> Raindow Six Siege  
+        <input type="submit" name="f-entrar" value="Entrar">
+    </form>
+
+    <form action="#" name="f_cad" method="get">
+        <label for="" class="labelblock">Possue carro?</label>        
+        <input type="radio" name="f-carro" id="" value="s"  class="inputline">Sim
+        <input type="radio" name="f-carro" id="" value="n"  class="inputline">Não
+    </form>
+
+    <form action="#" name="f_cad" method="get">
+
+        <label class="labelblock">Hora:</label>
+        <input type="time" name="f-hora" id="" min="09:00" max="17:00" required>
+
+        <label for="" class="labelblock">Data:</label>
+        <input type="date" name="f-data" id="" min="2021-10-18" max="2021-10-25">
+       
+        <label for="" class="labelblock">Data e Hora:</label>
+        <input type="datetime-local" name="f-data-hora" id="">
+
+        <input type="submit" name="f_enviar" id="" value="Enviar">
+    </form>
+
+    <form action="#" name="f_cad" method="get">
+
+        <label class="labelblock">Mês:</label>
+        <input type="month" name="f-mes" id="">
+
+        <label for="" class="labelblock">Semana:</label>
+        <input type="week" name="f-semana" id="">
+
+        <input type="hidden" name="f-hidden" value="HTML">
+
+        <input type="submit" name="f_enviar" id="" value="Enviar">
+    </form>
+
+    <form action="#" name="f_cad" method="get">
+
+        <label class="labelblock">Selecione uma Cor:</label>
+        <input type="color" name="f-cores" id="">
+
+        <label for="" class="labelblock">Digite seu e-mail:</label>
+        <input type="email" name="f-email" id="">
+
+        <input type="image" src="Imagens/004.png" alt="">
+
+        <input type="submit" name="f_enviar" id="" value="Enviar">
+    </form>
+
+    <form action="#" name="f_cad" method="get">
+
+        
+
+        <label for="" class="labelblock">Digite seu e-mail:</label>
+        <input type="email" name="f-email" id="">
+
+        <label for="" class="labelblock">Escolha um numero:</label>
+        <input type="number" name="f-numero" id="" step="2"
+        min="0" max="100">
+        
+        <label for="" class="labelblock">Pesquisar:</label>
+        <input type="search" name="f-search" id="" >
+
+        <input type="submit" name="f_enviar" id="" value="Enviar">
+    </form>
+    
+    <form action="#" name="f_cad" method="get" enctype="multipart/form-data">
+
+        <label class="labelblock">Selecione o arquivo:</label>
+        <input type="file" name="f-file" id="" multiple accept=".jpg,.gif,.png">
+
+        <label for="" class="labelblock">Digite o seu URL:</label>
+        <input type="url" name="f-url" id="" pattern="https://.*">
+    
+        <input type="submit" name="f_enviar" id="" value="Enviar">
+    </form>
+    
+    <form action="#" name="f_cad" method="get">
+
+        <select name="f-gen" id="" multiple size="2">
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>    
+        <input type="submit" name="f_enviar" id="" value="Enviar">
+    </form>
+
+    <form action="#" name="f_cad" method="get">
+
+        <input list="f-transp" name="f-cor">
+            <datalist id="f-list">
+                <option value="red">Vermenlho</option>
+                <option value="green">Verde</option>
+                <option value="blue">Azul</option>
+                <option value="black">Preto</option>
+                <option value="yellow">Amarelo</option>
+                <option value="white">Branco</option>
+            </datalist> 
+
+            <datalist id="f-transp">
+                <option value="01">Carro</option>
+                <option value="02">Moto</option>
+                <option value="03">Bicicleta</option>
+            </datalist> 
+
+        <input type="submit" name="f_enviar" id="" value="Enviar">
+    </form>
+
+    <form action="#" name="f_cad" method="get">
+
+        <fieldset>
+            <legend>Dados 1</legend>
+            <label for="">Nome:</label>
+            <input type="text" name="f-nome">
+            
+            <label class="labelblock">Telefone:</label>
+            <input type="tel" name="f-tel" id="" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx">
+        </fieldset>
+<br>
+        <fieldset disabled>
+            <legend>Dados 2</legend>
+            <label for="f-nome">Pusui carro?</label>
+            <input type="radio" name="f-carro" id="f-carro" value="s" checked class="inputline">Sim
+            <input type="radio" name="f-carro" id="f-carro" value="n" class="inputline">Não
+            <br>
+            <label for="f-nome">Pusui casa?</label>
+            <input type="radio" name="f-casa" id="f-carro" value="s" checked class="inputline">Sim
+            <input type="radio" name="f-casa" id="f-carro" value="n" class="inputline">Não
+        </fieldset>
+    </form>
+
+    <form action="#" name="d-cad" method="get">
+
+        <textarea name="f-coment" id="" cols="40" rows="10" maxlength="248">Deixe Sua mensagem</textarea>
+
+        <input type="submit" name="f_enviar" id="" value="Enviar">
+    </form>
+
+    <p><a href="index.html">Pagina Inicial</a></p>
+</body>
+</html>
