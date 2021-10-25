@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        thead{
+            color: green;
+            background-color: rgba(128, 128, 128, 0.527);
+        }
+
+        tbody{
+            color: blue;
+            background-color: rgba(255, 228, 196, 0.562);
+        } 
+
+        tfoot{
+            color: red;
+            background-color: rgba(169, 169, 169, 0.527);
+        }
+
+        table,th,td{
+            border: 1px solid black;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Fabricante</th>
+                <th>Modelo</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Honda</td>
+                <td>WR-V</td>
+                <td>R$ 70,000</td>
+            </tr>
+            <tr>
+                <td>VolksWagem</td>
+                <td>Golf</td>
+                <td>R$ 65,000</td>
+            </tr>
+            <tr>
+                <td>Ford</td>
+                <td>Ranger</td>
+                <td>R$ 110,000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Tabela de preços 2020</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table border="1">
+       
+        <tr>
+            <td>&nbsp;</td>            
+            <td>&nbsp;</td>            
+            <td>&nbsp;</td>            
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td rowspan="5">Seminovos</td>
+        </tr>
+
+        <tr>
+            <td>Fabricante</td>
+            <td>Modelo</td>
+            <td>Valor</td>
+        </tr>
+
+        <tr>
+            <td>Honda</td>
+            <td>WR-V</td>
+            <td>R$ 70,000</td>
+        </tr>
+
+        <tr>
+            <td>VolksWagem</td>
+            <td>Golf</td>
+            <td>R$ 65,000</td>
+        </tr>
+        <tr>
+            <td>Ford</td>
+            <td>Ranger</td>
+            <td>R$ 110,000</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">Tabela de preços 2020</td>
+        </tr>
+    </table>
+
+    <p><a href="index.html">Pagina Inicial</a></p>
+</body>
+</html>
