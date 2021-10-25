@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Banner">Home</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Cursos">Cursos</a></li>
+                <li><a href="#Canal">Canal</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Banner" class="banner">
+        <img src="imagens/irina-blok.jpg" alt="">
+    </section>
+
+    <section id="Sobre" class="flexivel">
+        <article class="borda0" data-anima="esquerda">
+            Sobreo canal
+        </article>
+        <article class="borda0" data-anima="direita">
+            sobre o Auto
+        </article>
+    </section>
+
+    <section id="Cursos" class="flexivel conteinerCursos">
+        <article class="borda0" data-anima="esquerda">
+            <img src="imagens/001.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/002.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/003.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/004.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+        </article >
+        <article class="borda0" data-anima="centro">
+            <img src="imagens/001.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/002.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/003.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/004.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+        </article>
+        <article class="borda0"data-anima="direita">
+            <img src="imagens/001.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/002.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/003.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/004.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+        </article>
+    </section>
+
+    <section class="parallax p1">
+        <article>
+            
+        </article>
+    </section>
+
+    <section id="Canal" class="flexivel conteinerCursos">
+        <article class="borda0" data-anima="esquerda">
+            <img src="imagens/001.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/002.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/003.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/004.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+        </article>
+        <article class="borda0" data-anima="direita">
+            <img src="imagens/001.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/002.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/003.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/004.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+        </article>
+    </section>
+
+    <section class="parallax p2">
+        <article>
+           
+        </article>
+    </section>
+
+    <section id="Contato" class="flexivel">
+        <article class="borda0" data-anima="esquerda">
+            <img src="imagens/001.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/002.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/003.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/004.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+        </article>
+        <article class="borda0" data-anima="centro">
+            <img src="imagens/001.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/002.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/003.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/004.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+        </article>
+        <article class="borda0" data-anima="direita">
+            <img src="imagens/001.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/002.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/003.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+            <img src="imagens/004.png" alt="Imagen de teste" class="mini" onclick="clickModal(this)">
+        </article>
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <div id="janelaModal" class="janelaModal escondeJanelaModal" role="dialog">
+        <span id="btnFechar" class="fecharModal">x</span>
+        <img src="" alt="" id="imgModal" class="imgModal">
+        <div id="txtModal" class="txtModal"></div>
+
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
