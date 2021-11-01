@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.menu{
+    background-color: darkgrey;
+    position:fixed;
+    top: 0;
+    left: -103px;
+    display:flex;
+    transition: all 0.5 ease;
+}
+
+.menu a{
+    text-align: center;
+    display: block;
+    padding: 25px;
+    transition: all 0.5 ease;   
+}
+
+.menu a img{
+    width: 50px;
+    margin: auto;
+}
+
+.menu a:hover{
+    background-color: #00ffff;
+}
+
+.ativo{    
+    background-color:#00a2ff;
+}
+
+.barra{
+    background-color: white;
+    width: 50px;
+    height: 5px;
+    margin: 7.5px;
+}
+
+.btnMenu{
+    cursor: pointer;
+}
+
+.menuAberto{
+    left: 0px;
+}
